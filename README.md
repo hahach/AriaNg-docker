@@ -6,6 +6,7 @@
 ## Introduction
 [AriaNg](https://github.com/mayswind/AriaNg) is a modern web frontend making [aria2](https://github.com/aria2/aria2) easier to use. AriaNg is written in pure html & javascript, thus it does not need any compilers or runtime environment. You can just put AriaNg in your web server and open it in your browser. AriaNg uses responsive layout, and supports any desktop or mobile devices.
 
+
 ## Supported architectures
 * `x86_64`, `amd64`
 * `i386` (Tags are prefixed by `i386-`)
