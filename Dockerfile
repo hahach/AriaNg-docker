@@ -39,7 +39,7 @@ ARG BUILD_DATE
 ARG VCS_REF
 
 LABEL version=$VERSION \
-      maintainer="Emile <Emile239@qq.com>" \
+      maintainer="Emile <emile239@qq.com>" \
       org.label-schema.name="AriaNG" \
       org.label-schema.version=$VERSION \
       org.label-schema.url="https://github.com/mayswind/AriaNg" \
@@ -48,7 +48,7 @@ LABEL version=$VERSION \
       org.label-schema.vcs-url="https://github.com/mayswind/AriaNg.git" \
       org.label-schema.vcs-ref=$VCS_REF \
       org.label-schema.schema-version="1.0" \
-      org.label-schema.docker.cmd="docker run -d --name ariang -p 6080:80 Emile/ariang"
+      org.label-schema.docker.cmd="docker run -d --name ariang -p 6080:80 emile/ariang"
 
 EXPOSE 80
 
