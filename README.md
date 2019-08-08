@@ -3,8 +3,6 @@
 
 [![License](https://img.shields.io/github/license/mayswind/AriaNg.svg)](https://github.com/mayswind/AriaNg/blob/master/LICENSE) [![Lastest Release](https://img.shields.io/github/release/mayswind/AriaNg.svg)](https://github.com/mayswind/AriaNg/releases)
 
-[![Layers](https://images.microbadger.com/badges/image/leonismoe/ariang.svg)](https://microbadger.com/images/leonismoe/ariang) [![Latest Version](https://images.microbadger.com/badges/version/leonismoe/ariang.svg)](https://microbadger.com/images/leonismoe/ariang)
-
 ## Introduction
 [AriaNg](https://github.com/mayswind/AriaNg) is a modern web frontend making [aria2](https://github.com/aria2/aria2) easier to use. AriaNg is written in pure html & javascript, thus it does not need any compilers or runtime environment. You can just put AriaNg in your web server and open it in your browser. AriaNg uses responsive layout, and supports any desktop or mobile devices.
 
@@ -14,7 +12,7 @@
 
 ## Run
 ``` sh
-docker run -d --name ariang -p 6080:80 leonismoe/ariang
+docker run -d --name ariang -p 6080:80 emile/ariang
 ```
 
 ## Features
