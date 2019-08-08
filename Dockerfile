@@ -18,6 +18,7 @@ RUN [ -f bower.json ] \
 
 RUN set -xe \
     && npm install -g gulp-cli \
+	&& npm install natives@1.1.6  \
     && npm install \
     && gulp build
 
@@ -38,7 +39,7 @@ ARG BUILD_DATE
 ARG VCS_REF
 
 LABEL version=$VERSION \
-      maintainer="Leonismoe <leonismoe@gmail.com>" \
+      maintainer="Emile <Emile239@qq.com>" \
       org.label-schema.name="AriaNG" \
       org.label-schema.version=$VERSION \
       org.label-schema.url="https://github.com/mayswind/AriaNg" \
@@ -47,7 +48,7 @@ LABEL version=$VERSION \
       org.label-schema.vcs-url="https://github.com/mayswind/AriaNg.git" \
       org.label-schema.vcs-ref=$VCS_REF \
       org.label-schema.schema-version="1.0" \
-      org.label-schema.docker.cmd="docker run -d --name ariang -p 6080:80 leonismoe/ariang"
+      org.label-schema.docker.cmd="docker run -d --name ariang -p 6080:80 Emile/ariang"
 
 EXPOSE 80
 
