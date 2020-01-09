@@ -1,6 +1,6 @@
 FROM node:10 AS build-stage
 
-ARG VERSION
+ARG VERSION=1.1.4
 
 RUN set -xe \
     && git clone https://github.com/mayswind/AriaNg.git \
