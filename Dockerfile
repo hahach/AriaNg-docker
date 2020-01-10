@@ -7,19 +7,22 @@ RUN set -xe \
     && cd AriaNg \
     && git checkout $VERSION \
     && node -v \
-    && npm -v
+    && npm -v 
 
 WORKDIR /AriaNg
 
 RUN [ -f bower.json ] \
+    && npm config set registry https://registry.npm.taobao.org \
     && npm install -g bower \
     && bower install --allow-root \
     || true
 
 RUN set -xe \
+    && npm config set registry https://registry.npm.taobao.org \
     && npm install -g gulp-cli \
-	&& npm install natives@1.1.6  \
+    && npm install natives  \
     && npm install \
+    && npm update \
     && gulp build
 
 
@@ -34,7 +37,6 @@ RUN set -xe  \
 COPY --chown=root:root nginx-ariang.conf /etc/nginx/conf.d/default.conf
 COPY --chown=nginx:www-data --from=build-stage /AriaNg/dist/ /usr/share/nginx/html/
 
-ARG VERSION
 ARG BUILD_DATE
 ARG VCS_REF
 
