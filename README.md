@@ -13,7 +13,7 @@
 
 ## Run
 ``` sh
-docker run -d --name ariang -p 6080:80 emile/ariang
+docker run -d --name ariang -p 6800:80 emile/ariang
 ```
 
 ## Features
