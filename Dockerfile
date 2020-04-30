@@ -50,7 +50,7 @@ LABEL version=$VERSION \
       org.label-schema.vcs-url="https://github.com/mayswind/AriaNg.git" \
       org.label-schema.vcs-ref=$VCS_REF \
       org.label-schema.schema-version="1.0" \
-      org.label-schema.docker.cmd="docker run -d --name ariang -p 6080:80 emile/ariang"
+      org.label-schema.docker.cmd="docker run -d --name ariang -p 6800:80 emile/ariang"
 
 EXPOSE 80
 
