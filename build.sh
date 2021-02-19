@@ -9,3 +9,6 @@ docker build  \
  --build-arg VERSION=${ver}  \
  --force-rm   \
  -f Dockerfile .
+
+docker save -o aria-${ver}.tar emile/ariang:${ver}
+
