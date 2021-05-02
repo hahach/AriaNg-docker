@@ -28,7 +28,7 @@ RUN set -xe \
 
 FROM alpine
 
-RUN set -xe  \
+RUN set -eux && sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories\
     && apk add --no-cache nginx tzdata \
     && mkdir -p /run/nginx \
     && ln -sf /dev/stdout /var/log/nginx/access.log \
