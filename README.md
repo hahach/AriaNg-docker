@@ -1,7 +1,3 @@
-#AriaNg docker
-
-AriaNg docker, forked from leonismoe/docker-images
-
 # AriaNg
 [AriaNg](https://github.com/mayswind/AriaNg), a modern web frontend making [aria2](https://github.com/aria2/aria2) easier to use. http://ariang.mayswind.net
 
