@@ -12,13 +12,13 @@ RUN set -xe \
 WORKDIR /AriaNg
 
 RUN [ -f bower.json ] \
-    && npm config set registry https://registry.npm.taobao.org \
+    && npm config set registry https://registry.npmmirror.com \
     && npm install -g bower \
     && bower install --allow-root \
     || true
 
 RUN set -xe \
-    && npm config set registry https://registry.npm.taobao.org \
+    && npm config set registry https://registry.npmmirror.com \
     && npm install -g gulp-cli \
     && npm install natives  \
     && npm install \
